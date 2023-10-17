@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 export const ValueSchema = new Schema(
   {
+    // this.title = data.title
     title: { type: String, required: true },
     description: { type: String, required: true },
     creatorId: { type: Schema.Types.ObjectId, ref: 'Profile', required: true }
